@@ -1,0 +1,135 @@
+#services {
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+
+#services header {
+    text-align: left;
+}
+
+#services .content span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#services h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#services .cards {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#services .cards .card {
+    border: 2px solid #ffffff0b;
+    padding: 3rem;
+    border-radius: 1rem;
+    background: linear-gradient(145deg, #00060f, #00040a);
+    box-shadow:  20px 20px 60px #000204,
+             -20px -20px 60px #000206;
+    text-align: left;
+}
+
+#services .cards .card ion-icon {
+    color: var(--blue);
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+#services .cards .card h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+    position: relative;
+}
+
+#services .cards .card p {
+    color: #a0a0a0;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#services .cards .card a {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    width: max-content;
+
+    transition: all 200ms ease-in-out;
+}
+
+#services .cards .card a:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+#services .cards .card a:hover ion-icon {
+    transform: translateX(8px);
+}
+
+#services .cards .card a ion-icon {
+    color: var(--orange);
+
+    transition: all 200ms ease-in-out;
+}
+
+#services img.iconeDamatta {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+    section#services header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#services .content span.span {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    section#services h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#services .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    section#services .content .cards .card {
+        height: 100%;
+    }
+
+    section#services .content .cards .card h3 {
+        font-size: 2.5rem;
+    }
+
+}

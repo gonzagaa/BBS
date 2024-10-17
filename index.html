@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS: Potencializando sua Eficiência Empresarial.</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logo bbs branca.png" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/logo bbs branca.png" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">        
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <div class="text-content">
+                        <h1 data-aos="fade-up-left"><span class="span">BBS</span>: Potencializando sua <span>eficiência empresarial</span></h1>
+
+                        <p data-aos="fade-up-left">Descomplicamos processos burocráticos para que você possa focar no crescimento do seu negócio.</p>
+                        <div data-aos="fade-up-left" class="buttons">
+                            <a href="#suporte"><button>Explore nossas soluções</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="interactive-image" class="image">
+                    <img class="desktop" src="./assets/bg bbs.jpg" alt="">
+                    <img class="mobile" src="./assets/bg bbs mobile.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1729100166">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">SERVIÇOS</span>
+                    <h2>Veja como podemos ajudá-lo:</h2>
+                </header>
+
+                <div class="cards">
+                    <div data-aos="fade-up-left" class="card">
+                        <ion-icon name="checkmark-done-circle"></ion-icon>
+                        <h3>Obtenção de Certidões</h3>
+                        <p>Rapidez e precisão no acesso a certidões essenciais para seu negócio.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <ion-icon name="checkmark-done-circle"></ion-icon>
+                        <h3>Registro de Imóveis</h3>
+                        <p>Cuidamos de toda a burocracia para você focar no que realmente importa.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <ion-icon name="checkmark-done-circle"></ion-icon>
+                        <h3>Consultoria Jurídica Documental</h3>
+                        <p>Apoio especializado para lidar com trâmites jurídicos complexos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Sobre</span>
+                    <h2>Entenda um pouco mais sobre nós:</h2>
+                </header>
+
+                <div data-aos="fade-up-right" class="container">
+                    <div class="text">
+                        <h3>BBS:</h3>
+                        <p>Desde <span>2008</span>, a BBS se dedica a <span>descomplicar o dia a dia das empresas</span>, oferecendo serviços que trazem <span>economia de tempo e eficiência operacional</span>. Nossa missão é transformar processos burocráticos em soluções simples, permitindo que nossos clientes foquem no que realmente importa: o <span>crescimento do seu negócio</span>. Com valores baseados em <span>confiança, inovação e eficiência</span>, a BBS é o parceiro estratégico que você precisa para <span>otimizar seus processos internos</span>.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="image">
+                        <img src="./assets/bbs sobre nos.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="missao">
+        <div class="wrapper">
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <h3>Missão</h3>
+                        <p><span>Simplificar o dia a dia</span> das empresas através de soluções <span>eficientes e inovadoras</span>, economizando tempo e otimizando processos burocráticos para que nossos clientes possam <span>focar em seu crescimento</span>.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Visão</h3>
+                        <p>Ser referência no Brasil como a principal <span>empresa de gestão de documentos e processos operacionais</span>, reconhecida pela <span>excelência, inovação e impacto positivo</span> no sucesso de nossos clientes.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Valores</h3>
+                        <p><span>Confiança:</span> Construímos relações baseadas em transparência e ética;
+                        <span>Eficiência:</span> Otimizamos processos para garantir resultados ágeis e precisos;
+                        <span>Inovação:</span> Buscamos constantemente novas formas de aprimorar nossos serviços.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-um" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right"><span>BBS Docs</span>: Transformando a Gestão de Documentos</h2>
+                        <h3 data-aos="fade-up-right">O BBS Docs foi criado para <span>revolucionar</span> a forma como sua empresa lida com documentação. Nossa solução integra a <span>obtenção, organização e armazenamento de documentos de maneira prática e segura</span>, permitindo que você tenha acesso <span>rápido e eficiente</span> a todos os registros essenciais, enquanto garantimos a conformidade com as <span>exigências legais</span>.</h3>
+
+                        <div data-aos="fade-up-right" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Obtenção de Certidões com rapidez e precisão</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Serviço completo de registro de imóveis</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon>Consultoria Jurídica Documental:</p>
+                        </div>
+
+                        <div data-aos="fade-up-right"  class="button">
+                            <a target="_blank" href=""><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div data-aos="fade-left" class="image">
+                <img src="./assets/bbs roxo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="service-dois" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-left"><span>BBS Gestão de Recebíveis</span>: Controlando Receitas, Construindo Relações</h2>
+                        <h3 data-aos="fade-up-left">O BBS Gestão de Recebíveis é a solução ideal para empresas que buscam <span>otimizar seus processos de cobrança</span>. Com uma abordagem <span>eficiente e ética</span>, nossa equipe trabalha para recuperar receitas pendentes, garantindo que seus fluxos de caixa estejam sempre em ordem, sem prejudicar suas <span>relações comerciais</span>.</h3>
+
+                        <div data-aos="fade-up-left" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Monitoramento contínuo de faturas e pagamentos.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Recuperação de receitas com estratégias personalizadas.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Manutenção de relacionamentos comerciais saudáveis.</p>
+                        </div>
+
+                        <div data-aos="fade-up-left" class="button">
+                            <a target="_blank" href=""><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" class="image">
+                    <img src="./assets/bbs verde.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section id="service-tres" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right"><span>BBS Serviços</span>: Eficiência Operacional ao Seu Alcance</h2>
+                        <h3 data-aos="fade-up-right">Com o BBS Serviços, <span>simplificamos e otimizamos</span> a gestão de processos operacionais de sua empresa, reduzindo a burocracia e permitindo que você foque no que realmente importa: <span>o crescimento</span>. Nossa equipe especializada garante que seus processos internos sejam geridos com a <span>máxima eficiência e precisão</span>.</h3>
+
+                        <div data-aos="fade-up-right" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Suporte completo em trâmites burocráticos com prefeituras e órgãos públicos.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Organização e controle de documentos fiscais e administrativos.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Assessoria na regularização de processos empresariais.</p>
+                        </div>
+
+                        <div data-aos="fade-up-right" class="button">
+                            <a target="_blank" href=""><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="image">
+                    <img src="./assets/bbs orange.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span class="span">CONTATO</span>
+                    <h2>Fale conosco!</h2>
+                </header>
+
+                <div class="text">
+                    <p>Estamos <span> prontos para impulsionar a eficiência da sua empresa</span>. Entre em contato com nossa equipe e descubra como podemos simplificar seus processos.</p>
+                    <a href="#"><button>Entrar em contato</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/logo bbs branca.png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#sobre">Sobre nós</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#contato">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>endereco</p>
+                    <p>email</p>
+                    <p><a target="_blank" href="tel:+55-11-99828-5151">telefone</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - BBS</p>
+
+                <a target="_blank" href="https://www.instagram.com/lsbdigital/">
+                    <p class="author">
+                        Desenvolvido por LSB DIGITAL
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

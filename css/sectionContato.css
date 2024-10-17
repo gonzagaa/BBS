@@ -1,0 +1,150 @@
+#contato {
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+
+#contato .content header span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#contato h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#contato .content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3rem;
+    padding: 2rem;
+    padding-block: 5rem;
+
+    background: linear-gradient(to bottom, #000205, #1b1b1b);
+    box-shadow:  20px 20px 60px #000309,
+             -20px -20px 60px #00050c;
+}
+
+#contato .content img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+#contato .content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000a7;
+    z-index: 1;
+}
+
+#contato .content span.span {
+    position: relative;
+    z-index: 2;
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+#contato h2 {
+    position: relative;
+    z-index: 2;
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+}
+
+#contato p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+    color: #ffffffc2;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+#contato p span {
+    font-weight: 400;
+    color: #fffffff4;
+}
+
+#contato .button {
+    position: relative;
+    z-index: 2;
+}
+
+#contato a button {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+    background: var(--gradient);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+
+    transition: all 200ms ease-in-out;
+} 
+
+#contato a button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #13131324;
+    filter: brightness(1.1);
+}
+
+@media (min-width: 1080px) {
+    section#contato .content header span.span {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    section#contato .content header h2 {
+        margin-top: .5rem;
+        font-size: 4.5rem;
+        font-weight: 500;
+    
+    }
+
+    section#contato .content {
+        padding-block: 7rem;
+        padding-inline: 20%;
+    }
+
+    section#contato .content h2 {
+        margin-top: 1rem;
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+
+    section#contato .content p {
+        font-size: 1.8rem;
+    }
+
+    section#contato .content a button {
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
+}
